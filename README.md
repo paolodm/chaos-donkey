@@ -1,6 +1,6 @@
 # chaos-donkey
 
-<img src="https://github.com/paolodm/chaos-donkey/blob/testing/resources/donkey.jpg" height="200" />
+<img src="https://raw.githubusercontent.com/paolodm/chaos-donkey/master/resources/donkey.jpg" height="200" />
 
 ## Usage
 
