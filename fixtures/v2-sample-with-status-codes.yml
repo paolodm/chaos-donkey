@@ -1,0 +1,11 @@
+origin: google.com
+
+xhr:
+  - path: /path/to/your/endpoint
+    statusCodes:
+      - 200
+      - 500
+  - path: /path/to/your/endpoint/2
+    statusCodes:
+      - 200
+      - 500
