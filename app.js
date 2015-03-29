@@ -1,31 +1,15 @@
-var getConfiguration = require('./lib/get-configuration'),
-    setupProxies = require('./lib/setup-proxies'),
-    watchr = require('watchr');
+var proxy = require('intercept-proxy'),
+    getConfiguration = require('./lib/get-configuration'),
+    setupHandlers = require('./lib/setup-handlers'),
+    _ = require('lodash');
 
-var configFile = process.argv[2];
+var conf = getConfiguration(process.argv[2]),
+    proxyServer = proxy.createServer(conf.origin);
 
-function run() {
-    var conf = getConfiguration(configFile);
-    setupProxies(conf.origin, 3000, conf.responses);
-}
+proxyServer.listen(3000, function() {
+    console.log('Proxying ' + conf.origin + ' at localhost:' + proxyServer.port + '...');
 
-function watch() {
-    watchr.watch({
-        path: configFile,
-        interval: 500,
-        listener: function() {
-            console.log('Change to ' + configFile + ' detected. Reloading configuration...');
-            run();
+    setupHandlers(proxyServer, conf.xhr);
 
-            // need to close this watchr and set up a new watch because of the way watchr works
-            // https://github.com/bevry/watchr/issues/75
-            this.close();
-            watch();
-        }
-    });
-}
-
-run();
-watch();
-
-
+    setInterval(_.partial(setupHandlers, proxyServer, conf.xhr), 3000);
+});
