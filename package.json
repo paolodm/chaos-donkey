@@ -1,22 +1,25 @@
 {
     "name": "chaos-donkey",
-    "version": "2.0.1",
+    "version": "2.0.2",
     "description": "Tool for ensuring your Single Page App can handle unexpected http responses.",
-    "main": "app.js",
     "bin": {
         "chaos-donkey": "bin/chaos-donkey"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.va.opower.it/paolo-delmundo/chaos-donkey"
+        "url": "https://github.com/paolodm/chaos-donkey"
     },
     "keywords": [
         "debugging",
-        "proxy"
+        "proxy",
+        "xhr",
+        "http",
+        "testing",
+        "e2e"
     ],
     "author": "Paolo del Mundo",
     "license": "MIT",
-    "homepage": "https://github.va.opower.it/paolo-delmundo/chaos-donkey",
+    "homepage": "https://github.com/paolodm/chaos-donkey",
     "dependencies": {
         "intercept-proxy": "^0.3.3",
         "js-yaml": "^3.2.3",
