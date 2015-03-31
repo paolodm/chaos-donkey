@@ -4,7 +4,7 @@
     "description": "Tool for ensuring your AJAXy website can handle unexpected http responses.",
     "main": "app.js",
     "bin": {
-        "donkey": "bin/donkey"
+        "donkey": "bin/chaos-donkey"
     },
     "repository": {
         "type": "git",

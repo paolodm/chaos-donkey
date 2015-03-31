@@ -11,13 +11,17 @@ is breaking in production.
 chaos-donkey is a [reverse-proxy](http://en.wikipedia.org/wiki/Reverse_proxy) that returns non-200 responses for your
 xhr requests. It allows you to see how your application will perform when things go wrong.
 
+## Installation
+
+`npm i -g chaos-donkey`
+
 ## Usage
 
 ```bash
-> node app <configuration yaml>
+> chaos-donkey <configuration yaml>
 
 example:
-> node app ./fixtures/mean-todomvc.yml
+> chaos-donkey ./fixtures/mean-todomvc.yml
 ```
 
 The configuration yaml is a file that contains the following:
