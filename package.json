@@ -1,0 +1,25 @@
+{
+    "name": "chaos-donkey",
+    "version": "2.0.0",
+    "description": "Tool for ensuring your AJAXy website can handle unexpected http responses.",
+    "main": "app.js",
+    "bin": {
+        "donkey": "bin/donkey"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.va.opower.it/paolo-delmundo/chaos-donkey"
+    },
+    "keywords": [
+        "debugging",
+        "proxy"
+    ],
+    "author": "Paolo del Mundo",
+    "license": "MIT",
+    "homepage": "https://github.va.opower.it/paolo-delmundo/chaos-donkey",
+    "dependencies": {
+        "intercept-proxy": "^0.3.3",
+        "js-yaml": "^3.2.3",
+        "lodash": "^2.4.1"
+    }
+}
