@@ -1,7 +1,7 @@
 {
     "name": "chaos-donkey",
-    "version": "2.0.0",
-    "description": "Tool for ensuring your AJAXy website can handle unexpected http responses.",
+    "version": "2.0.1",
+    "description": "Tool for ensuring your Single Page App can handle unexpected http responses.",
     "main": "app.js",
     "bin": {
         "chaos-donkey": "bin/chaos-donkey"
