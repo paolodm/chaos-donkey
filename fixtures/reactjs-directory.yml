@@ -1,0 +1,6 @@
+origin: reactjs-directory.herokuapp.com
+
+xhr:
+  - path: /employees?name=a
+    statusCodes:
+      - 200

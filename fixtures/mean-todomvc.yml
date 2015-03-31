@@ -1,0 +1,5 @@
+origin: mean-todomvc.herokuapp.com
+
+xhr:
+  - path: /api/todos
+

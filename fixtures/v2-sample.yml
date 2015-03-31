@@ -1,5 +1,0 @@
-origin: google.com
-
-xhr:
-  - path: /path/to/your/endpoint
-  - path: /path/to/your/endpoint/2
