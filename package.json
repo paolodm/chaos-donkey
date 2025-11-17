@@ -22,7 +22,7 @@
     "homepage": "https://github.com/paolodm/chaos-donkey",
     "dependencies": {
         "intercept-proxy": "^0.3.3",
-        "js-yaml": "^3.2.3",
+        "js-yaml": "^4.1.1",
         "lodash": "^2.4.1"
     }
 }
